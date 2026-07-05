@@ -181,7 +181,7 @@ function deliveryDriverIsLate(driver){
 
 function staffUserGet() {
 
-    fetch("http://backend.restapi.co.za/items/staff")
+    fetch("https://backend.restapi.co.za/items/staff")
     .then(response => response.json())
     .then(result => {
 

@@ -181,11 +181,11 @@ function deliveryDriverIsLate(driver){
 
 function staffUserGet() {
 
-    fetch("https://backend.restapi.co.za/items/staff")
+    fetch("https://6a4ab1d8edfa6a2b5fd81175.mockapi.io/api/staff")
     .then(response => response.json())
     .then(result => {
 
-        result.data.slice(0, 5).forEach(member => {
+            result.forEach(member => {
 
             const staff = new StaffMember(
                 member.name,
